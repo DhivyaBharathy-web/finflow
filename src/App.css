@@ -10,17 +10,10 @@ body {
   background-color: #f8f8f8;
 }
 
-/* Add to your Hero.css or global CSS */
-
-
-
-
-
 /*------------global-----------*/
 .container {
   max-width: 85%;
   margin: auto;
- 
 }
 .flexSB {
   display: flex;
@@ -73,23 +66,19 @@ button:hover {
   color: #fff;
 }
 
-/*------------global-----------*/
 #heading {
   text-align: center;
   padding: 40px 0;
-  
 }
 #heading h3 {
   font-size: 45px;
   margin: 20px 0;
   color: #2d67d3;
   text-transform: capitalize;
-  
 }
 #heading h1 {
   font-weight: 600;
   letter-spacing: 1px;
-  
   text-transform: uppercase;
 }
 p {
@@ -100,7 +89,6 @@ p {
 .back {
   background-image: url("../public/images/preview.jpg");
   background-size: cover;
-  
   background-attachment: fixed;
   position: absolute;
   top: 0;
@@ -161,15 +149,28 @@ p {
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
   background-color: #fff;
 }
+
 @media screen and (max-width: 768px) {
-  .grid2,
-  .grid3,
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
+  .grid, .grid2, .grid3 {
+    grid-template-columns: 1fr 1fr; /* Reduced to 2 columns */
   }
+  
+  #heading h3 {
+    font-size: 28px; /* Smaller font for mobile */
+  }
+  
   .back {
+    padding-top: 20%;
+    height: auto; /* Auto height for flexibility */
     background-position: center;
-    padding-top: 50%;
-    height: 80vh;
+  }
+
+  .back h1 {
+    font-size: 48px; /* Smaller hero text */
+  }
+
+  p {
+    font-size: 16px; /* Slightly smaller paragraph text */
+    line-height: 24px;
   }
 }

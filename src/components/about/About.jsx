@@ -5,12 +5,10 @@ import AboutCard from "./AboutCard"
 
 const About = () => {
   return (
-    <>
-      <div id="about">
-        <Back title='About Us' />
-        <AboutCard />
-      </div>
-    </>
+    <div id="about">
+      <Back title='About Us' />
+      <AboutCard />
+    </div>
   )
 }
 
