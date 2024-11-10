@@ -6,8 +6,10 @@ import AboutCard from "./AboutCard"
 const About = () => {
   return (
     <>
-      <Back title='About Us' />
-      <AboutCard />
+      <div id="about">
+        <Back title='About Us' />
+        <AboutCard />
+      </div>
     </>
   )
 }

@@ -6,7 +6,7 @@ import Faq from "./Faq"
 
 const Features = () => {
   return (
-    <>
+    <div id="features">
       <Back title="Our Features"/>
       <section className='price padding'>
         <div className='container grid'>
@@ -14,8 +14,8 @@ const Features = () => {
         </div>
       </section>
       <Faq />
-    </>
+    </div>
   )
 }
 
-export default Features;
+export default Features

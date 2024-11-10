@@ -38,7 +38,7 @@ header {
  
 }
 header.scrolled {
-  background-color: rgba(150, 150, 150, 0.4); /* Light transparent version of the color */
+  background-color: rgba(150, 150, 150, 1); /* Light transparent version of the color */
 }
 header .nav {
   display: flex !important;

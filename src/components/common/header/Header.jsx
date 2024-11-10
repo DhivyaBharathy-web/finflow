@@ -50,12 +50,19 @@ const Header = () => {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
+            
           </ul>
           <div className="start">
-            <div className="button">TRY OUR APP</div>
+            <Link to="/coming-soon">
+              <div className="button"style={{ color: "#FFF" }}>TRY OUR APP</div>
+            </Link>
           </div>
-          <button className="toggle" onClick={() => setClick(!click)}>
-            {click ? <i className="fa fa-times"> </i> : <i className="fa fa-bars"></i>}
+          <button
+            className="toggle"
+            onClick={() => setClick(!click)}
+            aria-label={click ? "Close menu" : "Open menu"}
+          >
+            {click ? <i className="fa fa-times" /> : <i className="fa fa-bars" />}
           </button>
         </nav>
       </header>

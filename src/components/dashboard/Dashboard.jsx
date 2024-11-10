@@ -34,7 +34,7 @@ const Dashboard = () => {
     <div className="dashboard">
       <header className="dashboard-header">
         <h1>DASHBOARD</h1>
-        <p>Real-time overview of your messaging system</p>
+        <p>REAL-TIME OVERVIEW OF YOUR MESSAGING SYSTEM</p>
       </header>
       <main className="dashboard-main">
         <section className="message-status">

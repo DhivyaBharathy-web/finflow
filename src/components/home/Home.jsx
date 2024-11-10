@@ -12,7 +12,7 @@ import Hero from "./hero/Hero"
 const Home = () => {
   return (
     <>
-    <nav classname="navbar">
+    <nav className="navbar">
       <Hero />
       <AboutCard />
       <SupportedConversions />

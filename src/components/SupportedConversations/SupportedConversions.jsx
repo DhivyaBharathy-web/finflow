@@ -9,7 +9,7 @@ const ConversionCard = ({ title, items }) => {
       <div className="content flex">
         <div className="left">
           <div className="img">
-          <img src="/images/arrow.png" alt={title} />
+            <img src="/images/arrow.png" alt={title} />
           </div>
         </div>
         <div className="text">
@@ -29,21 +29,20 @@ const ConversionCard = ({ title, items }) => {
 }
 
 const AdapterCard = ({ name }) => {
-  // Map each adapter to a specific image
   const getImageSrc = (adapterName) => {
     switch (adapterName) {
       case "SFTP":
-        return "/images/ftp_412502.png"; 
+        return "/images/ftp_412502.png"
       case "IBM MQ":
-        return "/images/ibm-mq.png"; // Update with actual path
+        return "/images/ibm-mq.png"
       case "KAFKA":
-        return "/images/kafka.webp"; // Update with actual path
+        return "/images/kafka.webp"
       case "API":
-        return "/images/apiteo.png"; // Update with actual path
+        return "/images/apiimage.png"
       default:
-        return "/images/default.png"; // Default image if none match
+        return "/images/default.png"
     }
-  };
+  }
 
   return (
     <div className="adapter-card">
@@ -52,63 +51,65 @@ const AdapterCard = ({ name }) => {
       </div>
       <h1>{name}</h1>
     </div>
-  );
-};
-
+  )
+}
 
 const SupportedConversions = () => {
   return (
     <>
-      <section className="intro">
+      {/* Small Navigation Bar */}
+      <nav className="mini-nav">
+        <div className="container">
+          
+        </div>
+      </nav>
+
+      <section className="intro" id="intro">
         <div className="container">
           <h2>Introduction to Financial Message Conversions</h2>
           <p>In today's global financial landscape, seamless communication between different messaging standards is crucial. Our conversion solutions bridge the gap between various financial message formats, ensuring smooth international transactions and compliance with evolving standards.</p>
         </div>
       </section>
-      <section className="how-it-works">
-  <div className="container">
-    <div className="step-content">
-      <h2>How It Works</h2>
-      <div className="steps">
-        <div className="step">
-          <div className="step-icon">Message Receipt</div>
-          
-         
+
+      <section className="how-it-works" id="how-it-works">
+        <div className="container">
+          <div className="step-content">
+            <h2>How It Works</h2>
+            <div className="steps">
+              <div className="step">
+                <div className="step-icon">Message Receipt</div>
+              </div>
+              <div className="step-connector">
+                <img src="/images/arrowback.png" alt="connector" />
+              </div>
+              <div className="step">
+                <div className="step-icon">Format Analysis</div>
+              </div>
+              <div className="step-connector">
+              <img src="/images/arrowback.png" alt="connector" />
+              </div>
+              <div className="step">
+                <div className="step-icon">Conversion Process</div>
+              </div>
+              <div className="step-connector">
+              <img src="/images/arrowback.png" alt="connector" />
+              </div>
+              <div className="step">
+                <div className="step-icon">Validation</div>
+              </div>
+              <div className="step-connector">
+              <img src="/images/arrowback.png" alt="connector" />
+              </div>
+              <div className="step">
+                <div className="step-icon">Delivery</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <hr className="connector" />
+      </section>
 
-        <div className="step">
-          <div className="step-icon">Format Analysis</div>
-         
-          
-        </div>
-        <hr className="connector" />
-
-        <div className="step">
-          <div className="step-icon">Conversion Process</div>
-       
-        </div>
-        <hr className="connector" />
-
-        <div className="step">
-          <div className="step-icon">Validation</div>
-          
-        </div>
-        <hr className="connector" />
-
-        <div className="step">
-          <div className="step-icon">Delivery</div>
-       
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-      <section className="conversions-section padding">
-        <Heading title="CONVERSIONS"subtitle="Supported Message Conversions"  />
+      <section className="conversions-section padding" id="conversions">
+        <Heading title="CONVERSIONS" subtitle="Supported Message Conversions" />
         <div className="container grid2">
           {Object.entries(conversionData).map(([key, value]) => (
             <ConversionCard key={key} title={key.replace('_', ' to ').toUpperCase()} items={value} />
@@ -116,14 +117,24 @@ const SupportedConversions = () => {
         </div>
       </section>
       
-      <section className="adapters-section padding">
-        <Heading title="CONNECTIVITY" subtitle="Supported Connectivity Adapters" />
-        <div className="container grid4">
-          {connectivityAdapters.map((adapter, index) => (
-            <AdapterCard key={index} name={adapter} />
-          ))}
-        </div>
-      </section>
+      <section className="adapters-section padding" id="connectivity">
+  <Heading title="CONNECTIVITY" subtitle="Supported Connectivity Adapters" />
+  <div className="container">
+    <div className="adapters-horizontal">
+      {connectivityAdapters.slice(0, 4).map((adapter, index) => ( // Display only the first four adapters
+        <React.Fragment key={index}>
+          <AdapterCard name={adapter} />
+          {index < 3 && ( // Show connectors between adapters, up to three times
+            <div className="adapter-connector">
+              
+            </div>
+          )}
+        </React.Fragment>
+      ))}
+    </div>
+  </div>
+</section>
+
     </>
   )
 }
