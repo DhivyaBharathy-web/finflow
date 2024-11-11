@@ -28,7 +28,7 @@ export const awrapper = [
   {
     cover: "https://img.icons8.com/ios-glyphs/64/FFFFFF/mission-of-a-company.png",
     data: "1,500",
-    title: "SUCCESSFUL CONVERSATIONS",
+    title: "SUCCESSFUL CONVERSIONS",
     style: {
       color: "#FFFFFF"
       },
