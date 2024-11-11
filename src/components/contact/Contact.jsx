@@ -6,7 +6,7 @@ const Contact = () => {
   const map = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.901364287013!2d-114.10032048808266!3d50.9070411715649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537174345dcd4f9d%3A0xe1ef06700dde145!2s170%20Shawbrooke%20Green%20SW%2C%20Calgary%2C%20AB%20T2Y%203C6%2C%20Canada!5e0!3m2!1sen!2sin!4v1730959992743!5m2!1sen!2sin'
   return (
     <>
-      <Back title='Contact us' />
+      <Back title='' />
       <section className='contacts padding'>
         <div className='container shadow flexSB'>
           <div className='left row'>

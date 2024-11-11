@@ -8,16 +8,11 @@ const Header = () => {
   const [scrolling, setScrolling] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setScrolling(true);
-    } else {
-      setScrolling(false);
-    }
+    setScrolling(window.scrollY > 50);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -28,7 +23,10 @@ const Header = () => {
       <Head />
       <header className={scrolling ? "scrolled" : ""}>
         <nav className="flexSB">
-          <ul className={click ? "mobile-nav" : "flexSB "} onClick={() => setClick(false)}>
+          <ul
+            className={click ? "mobile-nav" : "flexSB"}
+            onClick={() => setClick(false)}
+          >
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -50,13 +48,14 @@ const Header = () => {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
-            
           </ul>
+
           <div className="start">
             <Link to="/coming-soon">
-              <div className="button"style={{ color: "#FFF" }}>TRY OUR APP</div>
+              <div className="button" style={{ color: "#FFF" }}>TRY OUR APP</div>
             </Link>
           </div>
+
           <button
             className="toggle"
             onClick={() => setClick(!click)}

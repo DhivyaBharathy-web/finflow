@@ -8,7 +8,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import Features from "./components/Features/features";
 import Blog from "./components/benefits/Benefits";
 import Contact from "./components/contact/Contact";
-
+import 'bootstrap/dist/js/bootstrap.min.js';
 import Home from "./components/home/Home";
 import SupportedConversions from "./components/SupportedConversations/SupportedConversions";
 import ComingSoon from "./components/ComingSoon/ComingSoon"; // Import the ComingSoon component

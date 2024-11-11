@@ -1,79 +1,75 @@
-/*--------head------------*/
+/* Head styles */
 .head {
   padding: 20px 0;
-  color: 
-  #2d67d3;
-}
-.logo h1 {
-  font-size: 35px;
-  font-weight: 900;
+  color: #2d67d3;
 }
 .logo {
   display: flex;
   align-items: center;
 }
-
+.logo h1 {
+  font-size: 35px;
+  font-weight: 900;
+}
 .logo-img {
-  width: 50px; /* adjust logo width */
-  height: 50px; /* adjust logo height */
-  margin-right: 10px; /* add space between logo and text */
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
-
 .logo-text {
-  font-size: 24px; /* adjust font size */
-  font-weight: bold; /* adjust font weight */
+  font-size: 24px;
+  font-weight: bold;
 }
-
 .head .icon {
   margin-left: 10px;
 }
-/*--------head------------*/
-/*--------header------------*/
+
+/* Header styles */
 header {
-  background-color:rgba(150, 150, 150, 1);
+  background-color: rgba(150, 150, 150, 1);
   margin: 0 30px;
   position: sticky;
   top: 0;
-  transition: background-color 0.3s ease; 
- 
+  transition: background-color 0.3s ease;
 }
 header.scrolled {
-  background-color: rgba(150, 150, 150, 1); /* Light transparent version of the color */
+  background-color: #2d67d3;
 }
 header .nav {
-  display: flex !important;
+  display: flex;
+}
+header ul {
+  padding: 30px 20px;
+  display: flex;
 }
 header li {
   margin-right: 40px;
 }
-header ul {
-  padding: 30px 20px;
-}
 header ul li a {
   color: #fff;
   font-weight: 500;
-  transition: 0.5s;
+  transition: color 0.3s ease;
 }
 header ul li a:hover {
   color: #2d67d3;
 }
 .start {
   background-color: #2d67d3;
-  padding: 30px 70px;
+  padding: 15px 30px;
   color: #fff;
   clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 .toggle {
   display: none;
 }
-/*--------header------------*/
+/* Mobile responsiveness */
 @media screen and (max-width: 768px) {
   .start {
     clip-path: none;
+    padding: 15px 20px;
   }
   header {
     margin: 0;
-    background-color: #2d67d3;
     position: relative;
   }
   header ul.flexSB {
@@ -85,17 +81,29 @@ header ul li a:hover {
   .toggle {
     display: block;
     background: none;
-    color: #fff;
+    color: #2d67d3;
     font-size: 30px;
     position: absolute;
-    right: 0;
-    top: -20px;
+    right: 20px;
+    top: -35px; /* Adjusted to bring the hamburger icon even higher */
+    z-index: 10;
   }
   .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    top: 7vh;
+    top: 60px;
     left: 0;
     width: 100%;
+    background-color: #2d67d3;
+    padding: 20px 0;
+    z-index: 5;
+  }
+  .mobile-nav li {
+    margin: 10px 0;
+  }
+  header.scrolled {
     background-color: #2d67d3;
   }
 }

@@ -145,3 +145,80 @@ footer .last ul li {
 .heart-icon {
   color: red;
 }
+/* Mobile-friendly Footer Section */
+@media screen and (max-width: 768px) {
+  /* Newsletter Section */
+  .newletter .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .newletter h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .newletter .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newletter input {
+    width: 100%;
+  }
+
+  /* Footer Section */
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  /* Footer Logo and Social Icons */
+  .box.logo {
+    align-items: center;
+  }
+
+  .logo-container {
+    justify-content: center;
+  }
+
+  .logo-text {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  /* Footer Links and Contact Sections */
+  footer h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  footer ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .last ul li {
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Legal Section */
+  .legal {
+    padding: 15px 10px;
+    text-align: center;
+  }
+}
+

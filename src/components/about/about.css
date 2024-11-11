@@ -62,39 +62,104 @@
   color: #fff;
 }
 
-
 /*----------awrapper------------*/
 .awrapper {
   background-color: rgba(45, 103, 211, 0.8);
- background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 30vh;
   color: #fff;
   border-bottom: 1px solid #dad0d0;
 }
+
 .awrapper .box {
   padding: 20px 0;
 }
+
 .awrapper img {
   margin-right: 30px;
 }
+
 .awrapper h1 {
   font-size: 50px;
 }
+
 .awrapper h3 {
   font-size: 20px;
   font-weight: 500;
 }
-/*----------awrapper------------*/
+
+
+
 @media screen and (max-width: 768px) {
-  .aboutHome .container {
-    flex-direction: column-reverse;
+  /* Adjust the aboutHome container */
+  .aboutHome {
+    flex-direction: column; /* Stack left and right sections vertically */
+    padding: 20px 10px; /* Add padding for better mobile spacing */
   }
-  .aboutHome .row {
-    width: 100%;
+
+  .aboutHome #heading {
+    text-align: center; /* Center the heading text on mobile */
+    padding: 0;
   }
+
+  .aboutHome .left img {
+    opacity: 0; 
+    /* Hide the image in mobile */
+  }
+
+  .aboutHome .right {
+    padding: 20px 10px; /* Reduce padding for mobile */
+  }
+
+  .aboutHome .items {
+    margin-top: 30px; /* Reduced margin for tighter layout */
+  }
+
+  .aboutHome .item {
+    flex-direction: column; /* Stack the icon and text vertically on mobile */
+    padding: 15px; /* Reduce padding for mobile */
+    margin-top: 20px; /* Reduce margin to avoid large gaps */
+  }
+
+  .aboutHome .img {
+    width: 50px; /* Smaller icon size */
+    height: 50px; /* Smaller icon size */
+    margin-bottom: 10px; /* Adjust spacing between icon and text */
+  }
+
+  .aboutHome .item h2 {
+    font-size: 18px; /* Slightly smaller font for mobile */
+    margin-bottom: 5px;
+  }
+
+  .aboutHome .item p {
+    font-size: 14px; /* Reduce font size for readability */
+    color: #999999;
+  }
+
+  .aboutHome .item:hover {
+    box-shadow: 0 5px 25px -2px rgba(0, 0, 0, 0.1); /* Slightly lighter box-shadow */
+  }
+
+  /* Hide the awrapper section on mobile */
   .awrapper {
-    height: 50vh;
+    display: none; /* Hides the awrapper on mobile */
   }
+
+  /* Hide the About Us title on mobile */
+  #nowant {
+    display: none !important; /* Ensure the 'nowant' div containing the About Us title is hidden */
+  }
+
+  .aboutHome .container {
+    width: 100%; /* Ensure the container is full width on mobile */
+  }
+
+  /* Ensure all sections are responsive and stack properly */
+  .aboutHome .row {
+    width: 100%; /* Ensure row takes full width */
+  }
+  
 }
