@@ -6,7 +6,7 @@ import Faq from "./Faq"
 
 const Features = () => {
   return (
-    <div id="features">
+    <div className="features-page" id="features">
       <Back className="back" title="OUR FEATURES"/>
       <section className='price padding'>
         <div className='container grid'>

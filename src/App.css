@@ -183,7 +183,7 @@ p {
     max-width: 90%;
     margin: 0 10px;
   }
-
+  
   .navbar {
     flex-direction: column; /* Stack navbar links vertically */
     justify-content: center; /* Center the links */
@@ -191,6 +191,19 @@ p {
     padding: 15px; /* Reduce padding for mobile */
     position: relative; /* Position navbar relatively for mobile */
   }
+  .features-page {
+    background-image: url("../public/images/preview.jpg");
+  }
+  .benefits-page {
+    background-image: url("../public/images/preview.jpg");
+  }
+  
+  .contact-page {
+    background-image: url("../public/images/preview.jpg");
+  }
+  
+  
+
 
   .navbar ul {
     display: block; /* Stack items vertically */

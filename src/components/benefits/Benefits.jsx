@@ -5,14 +5,14 @@ import "./benefits.css"
 
 const Benefits = () => {
   return (
-    <>
-      <Back className="back" title='OUR BENEFITS' /> {/* Add the class "back" */}
+    <div className="benefits-page" id="benefits"> {/* Add the class here */}
+      <Back className="back" title='OUR BENEFITS' />
       <section className='blog padding'>
         <div className='container grid2'>
           <BlogCard />
         </div>
       </section>
-    </>
+    </div>
   )
 }
 
