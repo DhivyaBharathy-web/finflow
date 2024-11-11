@@ -175,7 +175,10 @@ p {
   background-color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) 
+  {
+    
   .container {
     max-width: 90%;
     margin: 0 10px;
@@ -247,4 +250,9 @@ p {
   .grid, .grid2, .grid3 {
     grid-template-columns: 1fr; /* Stack grid items */
   }
+  .back {
+    opacity: 0;
+  }
+  
+ 
 }

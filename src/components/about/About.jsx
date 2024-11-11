@@ -8,7 +8,7 @@ const About = () => {
     
     <div id="about">
       <div id="nowant">
-      <Back title='' />
+      <Back className="back" title='ABOUT US' />
       </div>
       <AboutCard />
     </div>

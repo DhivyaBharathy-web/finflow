@@ -6,7 +6,7 @@ import "./benefits.css"
 const Benefits = () => {
   return (
     <>
-      <Back title='' />
+      <Back className="back" title='OUR BENEFITS' /> {/* Add the class "back" */}
       <section className='blog padding'>
         <div className='container grid2'>
           <BlogCard />

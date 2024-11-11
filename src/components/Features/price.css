@@ -43,5 +43,27 @@
   background-color: #2d67d3;
   color: #fff;
 }
-
+@media only screen and (max-width: 768px) {
+  .price .items {
+    padding: 20px; /* Reduced padding */
+    text-align: center;
+  }
+  
+  .price h1 {
+    font-size: 30px; /* Reduced font size */
+    margin: 10px 0; /* Reduced margin */
+    color: #2d67d3;
+  }
+  
+  .price h1 span {
+    font-size: 15px; /* Reduced font size */
+    margin-right: 5px;
+    color: #000;
+  }
+  
+  .price p {
+    color: grey;
+    margin: 20px 0; /* Reduced margin */
+  }
+}
 /*--------------faq-------------*/

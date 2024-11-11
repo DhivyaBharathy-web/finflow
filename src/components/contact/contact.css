@@ -45,6 +45,7 @@ form .flexSB input:nth-child(1) {
 @media screen and (max-width: 768px) {
   .contacts .container {
     flex-direction: column;
+   
   }
   .contacts iframe {
     height: 50vh;

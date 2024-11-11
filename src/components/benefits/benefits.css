@@ -38,6 +38,10 @@
   color: grey;
 }
 @media screen and (max-width: 768px) {
+  .back {
+    display: none;
+  }
+  
   /* Adjusting the image in mobile view */
   .blog img {
     width: 70%; /* Increase image size for mobile */
